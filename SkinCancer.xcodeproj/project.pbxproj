@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02DF1E2C291976D10021EAA7 /* SkinCancerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF1E2B291976D10021EAA7 /* SkinCancerApp.swift */; };
+		02DF1E30291976D20021EAA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DF1E2F291976D20021EAA7 /* Assets.xcassets */; };
+		02DF1E33291976D20021EAA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DF1E32291976D20021EAA7 /* Preview Assets.xcassets */; };
+		02DF1E53291976EA0021EAA7 /* skin_model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 02DF1E3A291976EA0021EAA7 /* skin_model.tflite */; };
+		02DF1E54291976EA0021EAA7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF1E3B291976EA0021EAA7 /* ImagePicker.swift */; };
+		02DF1E55291976EA0021EAA7 /* ModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF1E3C291976EA0021EAA7 /* ModelParser.swift */; };
+		02DF1E56291976EA0021EAA7 /* CVPixelBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF1E3D291976EA0021EAA7 /* CVPixelBufferExtension.swift */; };
+		02DF1E57291976EA0021EAA7 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF1E3E291976EA0021EAA7 /* UIImageExtension.swift */; };
+		02DF1E5B291976EA0021EAA7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF1E43291976EA0021EAA7 /* MainView.swift */; };
+		02DF1E5D291976EA0021EAA7 /* OclType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF1E46291976EA0021EAA7 /* OclType.swift */; };
+		02DF1E5E291976EA0021EAA7 /* FileAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF1E47291976EA0021EAA7 /* FileAccessor.swift */; };
+		02DF1E5F291976EA0021EAA7 /* Ocl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF1E48291976EA0021EAA7 /* Ocl.swift */; };
+		02DF1E60291976EA0021EAA7 /* OclFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF1E49291976EA0021EAA7 /* OclFile.swift */; };
+		02DF1E61291976EA0021EAA7 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF1E4B291976EA0021EAA7 /* View+Extensions.swift */; };
+		02DF1E62291976EA0021EAA7 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF1E4D291976EA0021EAA7 /* DB.swift */; };
+		02DF1E6D29197D630021EAA7 /* SkinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF1E6C29197D630021EAA7 /* SkinViewModel.swift */; };
+		02E7A3EC29B6496800F0A945 /* SkinCancerVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7A3E929B6496800F0A945 /* SkinCancerVO.swift */; };
+		02E7A3ED29B6496800F0A945 /* SkinCancer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7A3EA29B6496800F0A945 /* SkinCancer.swift */; };
+		02E7A3EE29B6496800F0A945 /* SkinCancerBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7A3EB29B6496800F0A945 /* SkinCancerBean.swift */; };
+		02E7A3F029B6498600F0A945 /* ImageRecognitionMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7A3EF29B6498600F0A945 /* ImageRecognitionMode.swift */; };
+		02E7A3F729B649C800F0A945 /* CreateSkinCancerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7A3F129B649C800F0A945 /* CreateSkinCancerScreen.swift */; };
+		02E7A3F829B649C800F0A945 /* EditSkinCancerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7A3F229B649C800F0A945 /* EditSkinCancerScreen.swift */; };
+		02E7A3F929B649C800F0A945 /* DeleteSkinCancerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7A3F329B649C800F0A945 /* DeleteSkinCancerScreen.swift */; };
+		02E7A3FA29B649C800F0A945 /* ListSkinCancerRowScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7A3F429B649C800F0A945 /* ListSkinCancerRowScreen.swift */; };
+		02E7A3FB29B649C800F0A945 /* SearchSkinCancerdatesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7A3F529B649C800F0A945 /* SearchSkinCancerdatesScreen.swift */; };
+		02E7A3FC29B649C800F0A945 /* ImageRecognitionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7A3F629B649C800F0A945 /* ImageRecognitionScreen.swift */; };
+		02E7A3FE29B64C0200F0A945 /* ListSkinCancerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7A3FD29B64C0200F0A945 /* ListSkinCancerScreen.swift */; };
+		AC34AAA3473A1AAB96A2FCA5 /* Pods_SkinCancer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688AECEAD393D7103183F4CD /* Pods_SkinCancer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02DF1E28291976D10021EAA7 /* SkinCancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkinCancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02DF1E2B291976D10021EAA7 /* SkinCancerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinCancerApp.swift; sourceTree = "<group>"; };
+		02DF1E2F291976D20021EAA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02DF1E32291976D20021EAA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02DF1E3A291976EA0021EAA7 /* skin_model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = skin_model.tflite; sourceTree = "<group>"; };
+		02DF1E3B291976EA0021EAA7 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		02DF1E3C291976EA0021EAA7 /* ModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelParser.swift; sourceTree = "<group>"; };
+		02DF1E3D291976EA0021EAA7 /* CVPixelBufferExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtension.swift; sourceTree = "<group>"; };
+		02DF1E3E291976EA0021EAA7 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		02DF1E43291976EA0021EAA7 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		02DF1E46291976EA0021EAA7 /* OclType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OclType.swift; sourceTree = "<group>"; };
+		02DF1E47291976EA0021EAA7 /* FileAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileAccessor.swift; sourceTree = "<group>"; };
+		02DF1E48291976EA0021EAA7 /* Ocl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ocl.swift; sourceTree = "<group>"; };
+		02DF1E49291976EA0021EAA7 /* OclFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OclFile.swift; sourceTree = "<group>"; };
+		02DF1E4B291976EA0021EAA7 /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		02DF1E4D291976EA0021EAA7 /* DB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		02DF1E6C29197D630021EAA7 /* SkinViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkinViewModel.swift; sourceTree = "<group>"; };
+		02E7A3E929B6496800F0A945 /* SkinCancerVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkinCancerVO.swift; sourceTree = "<group>"; };
+		02E7A3EA29B6496800F0A945 /* SkinCancer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkinCancer.swift; sourceTree = "<group>"; };
+		02E7A3EB29B6496800F0A945 /* SkinCancerBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkinCancerBean.swift; sourceTree = "<group>"; };
+		02E7A3EF29B6498600F0A945 /* ImageRecognitionMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRecognitionMode.swift; sourceTree = "<group>"; };
+		02E7A3F129B649C800F0A945 /* CreateSkinCancerScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSkinCancerScreen.swift; sourceTree = "<group>"; };
+		02E7A3F229B649C800F0A945 /* EditSkinCancerScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSkinCancerScreen.swift; sourceTree = "<group>"; };
+		02E7A3F329B649C800F0A945 /* DeleteSkinCancerScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteSkinCancerScreen.swift; sourceTree = "<group>"; };
+		02E7A3F429B649C800F0A945 /* ListSkinCancerRowScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSkinCancerRowScreen.swift; sourceTree = "<group>"; };
+		02E7A3F529B649C800F0A945 /* SearchSkinCancerdatesScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSkinCancerdatesScreen.swift; sourceTree = "<group>"; };
+		02E7A3F629B649C800F0A945 /* ImageRecognitionScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRecognitionScreen.swift; sourceTree = "<group>"; };
+		02E7A3FD29B64C0200F0A945 /* ListSkinCancerScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSkinCancerScreen.swift; sourceTree = "<group>"; };
+		688AECEAD393D7103183F4CD /* Pods_SkinCancer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkinCancer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74573FBAD4BA5A081826091F /* Pods-SkinCancer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinCancer.debug.xcconfig"; path = "Target Support Files/Pods-SkinCancer/Pods-SkinCancer.debug.xcconfig"; sourceTree = "<group>"; };
+		D13EE88383B54CAEE4FA50E0 /* Pods-SkinCancer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinCancer.release.xcconfig"; path = "Target Support Files/Pods-SkinCancer/Pods-SkinCancer.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02DF1E25291976D10021EAA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC34AAA3473A1AAB96A2FCA5 /* Pods_SkinCancer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02DF1E1F291976D10021EAA7 = {
+			isa = PBXGroup;
+			children = (
+				02DF1E2A291976D10021EAA7 /* SkinCancer */,
+				02DF1E29291976D10021EAA7 /* Products */,
+				8BDD22EAA8BAE1B325FD3CDF /* Pods */,
+				79605C4FBCB56E19994003F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		02DF1E29291976D10021EAA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02DF1E28291976D10021EAA7 /* SkinCancer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02DF1E2A291976D10021EAA7 /* SkinCancer */ = {
+			isa = PBXGroup;
+			children = (
+				02DF1E2B291976D10021EAA7 /* SkinCancerApp.swift */,
+				02DF1E4C291976EA0021EAA7 /* DataBase */,
+				02DF1E4A291976EA0021EAA7 /* Extensions */,
+				02DF1E45291976EA0021EAA7 /* Helper */,
+				02DF1E39291976EA0021EAA7 /* ML Model */,
+				02DF1E4E291976EA0021EAA7 /* Model */,
+				02DF1E3F291976EA0021EAA7 /* View */,
+				02DF1E6B29197D630021EAA7 /* ViewModel */,
+				02DF1E2F291976D20021EAA7 /* Assets.xcassets */,
+				02DF1E31291976D20021EAA7 /* Preview Content */,
+			);
+			path = SkinCancer;
+			sourceTree = "<group>";
+		};
+		02DF1E31291976D20021EAA7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				02DF1E32291976D20021EAA7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02DF1E39291976EA0021EAA7 /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				02DF1E3A291976EA0021EAA7 /* skin_model.tflite */,
+				02DF1E3B291976EA0021EAA7 /* ImagePicker.swift */,
+				02DF1E3C291976EA0021EAA7 /* ModelParser.swift */,
+				02DF1E3D291976EA0021EAA7 /* CVPixelBufferExtension.swift */,
+				02DF1E3E291976EA0021EAA7 /* UIImageExtension.swift */,
+			);
+			path = "ML Model";
+			sourceTree = "<group>";
+		};
+		02DF1E3F291976EA0021EAA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02E7A3F129B649C800F0A945 /* CreateSkinCancerScreen.swift */,
+				02E7A3F329B649C800F0A945 /* DeleteSkinCancerScreen.swift */,
+				02E7A3F229B649C800F0A945 /* EditSkinCancerScreen.swift */,
+				02E7A3F629B649C800F0A945 /* ImageRecognitionScreen.swift */,
+				02E7A3FD29B64C0200F0A945 /* ListSkinCancerScreen.swift */,
+				02E7A3F429B649C800F0A945 /* ListSkinCancerRowScreen.swift */,
+				02E7A3F529B649C800F0A945 /* SearchSkinCancerdatesScreen.swift */,
+				02DF1E43291976EA0021EAA7 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02DF1E45291976EA0021EAA7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				02DF1E46291976EA0021EAA7 /* OclType.swift */,
+				02DF1E47291976EA0021EAA7 /* FileAccessor.swift */,
+				02DF1E48291976EA0021EAA7 /* Ocl.swift */,
+				02DF1E49291976EA0021EAA7 /* OclFile.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		02DF1E4A291976EA0021EAA7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02DF1E4B291976EA0021EAA7 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		02DF1E4C291976EA0021EAA7 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				02DF1E4D291976EA0021EAA7 /* DB.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		02DF1E4E291976EA0021EAA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02E7A3EA29B6496800F0A945 /* SkinCancer.swift */,
+				02E7A3EB29B6496800F0A945 /* SkinCancerBean.swift */,
+				02E7A3E929B6496800F0A945 /* SkinCancerVO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02DF1E6B29197D630021EAA7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				02E7A3EF29B6498600F0A945 /* ImageRecognitionMode.swift */,
+				02DF1E6C29197D630021EAA7 /* SkinViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		79605C4FBCB56E19994003F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				688AECEAD393D7103183F4CD /* Pods_SkinCancer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BDD22EAA8BAE1B325FD3CDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74573FBAD4BA5A081826091F /* Pods-SkinCancer.debug.xcconfig */,
+				D13EE88383B54CAEE4FA50E0 /* Pods-SkinCancer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02DF1E27291976D10021EAA7 /* SkinCancer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02DF1E36291976D20021EAA7 /* Build configuration list for PBXNativeTarget "SkinCancer" */;
+			buildPhases = (
+				5781AF488C1DD942D22D7C32 /* [CP] Check Pods Manifest.lock */,
+				02DF1E24291976D10021EAA7 /* Sources */,
+				02DF1E25291976D10021EAA7 /* Frameworks */,
+				02DF1E26291976D10021EAA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkinCancer;
+			productName = SkinCancer;
+			productReference = 02DF1E28291976D10021EAA7 /* SkinCancer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02DF1E20291976D10021EAA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					02DF1E27291976D10021EAA7 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 02DF1E23291976D10021EAA7 /* Build configuration list for PBXProject "SkinCancer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02DF1E1F291976D10021EAA7;
+			productRefGroup = 02DF1E29291976D10021EAA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02DF1E27291976D10021EAA7 /* SkinCancer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02DF1E26291976D10021EAA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DF1E33291976D20021EAA7 /* Preview Assets.xcassets in Resources */,
+				02DF1E53291976EA0021EAA7 /* skin_model.tflite in Resources */,
+				02DF1E30291976D20021EAA7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5781AF488C1DD942D22D7C32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkinCancer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02DF1E24291976D10021EAA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DF1E5D291976EA0021EAA7 /* OclType.swift in Sources */,
+				02E7A3FA29B649C800F0A945 /* ListSkinCancerRowScreen.swift in Sources */,
+				02E7A3F029B6498600F0A945 /* ImageRecognitionMode.swift in Sources */,
+				02DF1E56291976EA0021EAA7 /* CVPixelBufferExtension.swift in Sources */,
+				02DF1E55291976EA0021EAA7 /* ModelParser.swift in Sources */,
+				02E7A3FE29B64C0200F0A945 /* ListSkinCancerScreen.swift in Sources */,
+				02DF1E54291976EA0021EAA7 /* ImagePicker.swift in Sources */,
+				02DF1E62291976EA0021EAA7 /* DB.swift in Sources */,
+				02E7A3FB29B649C800F0A945 /* SearchSkinCancerdatesScreen.swift in Sources */,
+				02E7A3F929B649C800F0A945 /* DeleteSkinCancerScreen.swift in Sources */,
+				02E7A3ED29B6496800F0A945 /* SkinCancer.swift in Sources */,
+				02DF1E5F291976EA0021EAA7 /* Ocl.swift in Sources */,
+				02DF1E6D29197D630021EAA7 /* SkinViewModel.swift in Sources */,
+				02E7A3EE29B6496800F0A945 /* SkinCancerBean.swift in Sources */,
+				02DF1E5B291976EA0021EAA7 /* MainView.swift in Sources */,
+				02E7A3EC29B6496800F0A945 /* SkinCancerVO.swift in Sources */,
+				02DF1E61291976EA0021EAA7 /* View+Extensions.swift in Sources */,
+				02E7A3F829B649C800F0A945 /* EditSkinCancerScreen.swift in Sources */,
+				02DF1E5E291976EA0021EAA7 /* FileAccessor.swift in Sources */,
+				02DF1E60291976EA0021EAA7 /* OclFile.swift in Sources */,
+				02E7A3F729B649C800F0A945 /* CreateSkinCancerScreen.swift in Sources */,
+				02DF1E2C291976D10021EAA7 /* SkinCancerApp.swift in Sources */,
+				02DF1E57291976EA0021EAA7 /* UIImageExtension.swift in Sources */,
+				02E7A3FC29B649C800F0A945 /* ImageRecognitionScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		02DF1E34291976D20021EAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02DF1E35291976D20021EAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02DF1E37291976D20021EAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74573FBAD4BA5A081826091F /* Pods-SkinCancer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SkinCancer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyanalwakeel.SkinCancer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02DF1E38291976D20021EAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D13EE88383B54CAEE4FA50E0 /* Pods-SkinCancer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SkinCancer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyanalwakeel.SkinCancer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02DF1E23291976D10021EAA7 /* Build configuration list for PBXProject "SkinCancer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DF1E34291976D20021EAA7 /* Debug */,
+				02DF1E35291976D20021EAA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02DF1E36291976D20021EAA7 /* Build configuration list for PBXNativeTarget "SkinCancer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DF1E37291976D20021EAA7 /* Debug */,
+				02DF1E38291976D20021EAA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02DF1E20291976D10021EAA7 /* Project object */;
+}
