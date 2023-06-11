@@ -7,56 +7,6 @@
 
 import Foundation
 
-/* This code requires OclFile.swift */
-
-func initialiseOclFile()
-{
-  createByPKOclFile(key: "System.in")
-  createByPKOclFile(key: "System.out")
-  createByPKOclFile(key: "System.err")
-}
-
-/* This metatype code requires OclType.swift */
-
-func initialiseOclType()
-{ let intOclType = createByPKOclType(key: "int")
-  intOclType.actualMetatype = Int.self
-  let doubleOclType = createByPKOclType(key: "double")
-  doubleOclType.actualMetatype = Double.self
-  let longOclType = createByPKOclType(key: "long")
-  longOclType.actualMetatype = Int64.self
-  let stringOclType = createByPKOclType(key: "String")
-  stringOclType.actualMetatype = String.self
-  let sequenceOclType = createByPKOclType(key: "Sequence")
-  sequenceOclType.actualMetatype = type(of: [])
-  let anyset : Set<AnyHashable> = Set<AnyHashable>()
-  let setOclType = createByPKOclType(key: "Set")
-  setOclType.actualMetatype = type(of: anyset)
-  let mapOclType = createByPKOclType(key: "Map")
-  mapOclType.actualMetatype = type(of: [:])
-  let voidOclType = createByPKOclType(key: "void")
-  voidOclType.actualMetatype = Void.self
-    
-  let skinCancerOclType = createByPKOclType(key: "SkinCancer")
-  skinCancerOclType.actualMetatype = SkinCancer.self
-
-  let skinCancerId = createOclAttribute()
-        skinCancerId.name = "id"
-        skinCancerId.type = stringOclType
-        skinCancerOclType.attributes.append(skinCancerId)
-  let skinCancerDates = createOclAttribute()
-        skinCancerDates.name = "dates"
-        skinCancerDates.type = stringOclType
-        skinCancerOclType.attributes.append(skinCancerDates)
-  let skinCancerImages = createOclAttribute()
-        skinCancerImages.name = "images"
-        skinCancerImages.type = stringOclType
-        skinCancerOclType.attributes.append(skinCancerImages)
-  let skinCancerOutcome = createOclAttribute()
-        skinCancerOutcome.name = "outcome"
-        skinCancerOutcome.type = stringOclType
-        skinCancerOclType.attributes.append(skinCancerOutcome)
-}
 
 func instanceFromJSON(typeName: String, json: String) -> AnyObject?
     { let jdata = json.data(using: .utf8)!
